@@ -17,9 +17,14 @@ console.log(masterArray);
 var toSort = masterArray.slice(0);
 console.log(toSort);
 selection(toSort);
-console.log(toSort);
+console.log("After selection " + toSort);
 
 toSort = masterArray.slice(0);
 console.log(toSort);
 insertion(toSort);
+console.log("After insertion " + toSort);
+
+toSort = masterArray.slice(0);
 console.log(toSort);
+shell(toSort);
+console.log("After shell " + toSort);

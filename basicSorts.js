@@ -22,3 +22,21 @@ var insertion = function(toSort) {
         }
     }
 }
+
+var shell = function(toSort) {
+    var h = 0;
+    while (h < toSort.length/3) {
+        h = h*3+1;
+    }
+
+    while (h >= 1) {
+        for (var i = h; i  < toSort.length; i++) {
+            for (var j = i; j >= h; j -= h) {
+                if(toSort[j] < toSort[j-h]) {
+                    swap(toSort, j, j-h);
+                }
+            }
+        }
+        h = parseInt(h/3);
+    }
+}
