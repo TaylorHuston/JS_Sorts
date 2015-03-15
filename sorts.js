@@ -28,3 +28,9 @@ toSort = masterArray.slice(0);
 console.log(toSort);
 shell(toSort);
 console.log("After shell " + toSort);
+
+
+toSort = masterArray.slice(0);
+console.log(toSort);
+mergeSort(toSort);
+console.log("After merge  " + toSort);
