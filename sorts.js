@@ -8,8 +8,8 @@ var swap = function(toSort, x, y) {
 
 //Entry point
 var masterArray = new Array();
-for (var i = 0; i < 100; i++) {
-    masterArray.push(Math.floor(Math.random()*100000) + 1);
+for (var i = 0; i < 50; i++) {
+    masterArray.push(Math.floor(Math.random()*1000) + 1);
 }
 
 console.log(masterArray);
