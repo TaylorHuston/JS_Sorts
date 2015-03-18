@@ -16,24 +16,29 @@ console.log(masterArray);
 
 var toSort = masterArray.slice(0);
 selection (toSort);
-console.log("After selection " + toSort);
+console.log("After selection sort " + toSort);
 
 toSort = masterArray.slice(0);
 insertion (toSort);
-console.log("After insertion " + toSort);
+console.log("After insertion sort " + toSort);
 
 toSort = masterArray.slice(0);
 shell(toSort);
-console.log("After shell " + toSort);
+console.log("After shell sort " + toSort);
 
 toSort = masterArray.slice(0);
 mergeSort (toSort);
-console.log("After merge  " + toSort);
+console.log("After merge sort " + toSort);
 
 toSort = masterArray.slice(0);
 quickSort (toSort);
-console.log("After quick  " + toSort);
+console.log("After quick sort " + toSort);
 
 toSort = masterArray.slice(0);
 threeWayQuick (toSort);
-console.log("After 3-way quick  " + toSort);
+console.log("After 3-way quick sort  " + toSort);
+
+toSort = masterArray.slice(0);
+toSort.unshift(0);
+heapSort (toSort);
+console.log("After heap sort  " + toSort);
